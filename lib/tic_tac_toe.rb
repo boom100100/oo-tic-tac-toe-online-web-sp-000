@@ -158,11 +158,10 @@ class TicTacToe
 
   def play
     loop do
-      puts "Please input a number from 1 to 10:"
-      turn
-
-      if over?
-
+      if !over?
+        puts "Please input a number from 1 to 10:"
+        turn
+      else
         if draw?
           puts "Cat's game!"
           break
