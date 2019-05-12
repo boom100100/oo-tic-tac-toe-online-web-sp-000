@@ -158,18 +158,17 @@ class TicTacToe
 
   def play
     loop do
+
       if !over?
         puts "Please input a number from 1 to 10:"
         turn
       else
         if draw?
           puts "Cat's game!"
-          break
         elsif won?
           puts "Congratulations #{winner}!"
-          break
         end
-
+        break
       end
     end
 
